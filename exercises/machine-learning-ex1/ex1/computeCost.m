@@ -13,12 +13,10 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-h = 0;							% Hypotesis
 
-h = X * theta;			
+J = (sum(((X * theta) - y) .^ 2)) / (2 * m);
 
 
-J = (sum((h - y) .^ 2)) / (2 * m);
 % =========================================================================
 
 end
